@@ -139,8 +139,19 @@ nav .logo {
 .full-nav .main-links {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 2vw;
+    cursor: pointer;
+    
+}
+
+.full-nav .main-links button{
+
+    background-color: transparent;
+    border: none;
     font-size: 4vmax;
+    color: #fff;
+    
 }
 
 .full-nav .main-links h3 {
@@ -655,7 +666,7 @@ footer {
         padding: 45vw 10vw 10vw 10vw;
     }
 
-    .full-nav .main-links {
+    .full-nav .main-links button {
         font-size: 5vmax;
     }
 
@@ -734,6 +745,12 @@ footer {
     #about-page{
         height: 50vh;
     }
+    .personal-text{
+        right: initial;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
 
     .rounded-div{
@@ -743,6 +760,7 @@ footer {
     .footer-header{
         top: 40%;
         gap: 15vmax;
+        width: 85vw;
     }
 
     .footer-header .upper{

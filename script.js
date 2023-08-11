@@ -170,18 +170,45 @@ function init() {
     clickToScroll(mainScroll, 'footer');
   });
 
-  if (window.innerWidth <= 500) {
+  if ( window.innerWidth >= 500) {
     OpenCloseButton();
-  }
-  else {
-    
-  OpenCloseButton();
   CursonAnimation();
   workAnimationCode();
   footerAnimation();
   }
+ 
 
 }
 
 init();
+
+
+
+function mobileNavButtonClick() {
+  home.addEventListener('click', function () {
+    document.querySelector('#page1').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  work.addEventListener('click', function () {
+    document.querySelector('#recent-projects').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  about.addEventListener('click', function () {
+    document.querySelector('#about-page').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  contact.addEventListener('click', function () {
+    document.querySelector('footer').scrollIntoView({ behavior: 'smooth' });
+  });
+
+
+}
+
+
+if (window.innerWidth <= 500) {
+  mobileNavButtonClick();
+  OpenCloseButton();
+
+}
+
 
