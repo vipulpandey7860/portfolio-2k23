@@ -48,7 +48,10 @@ function OpenCloseButton() {
   
         line1.style.transform = `translateY(.5vmax) rotate(45deg)`;
         line2.style.transform = `translateY(-.5vmax) rotate(-45deg) `;
-  
+
+        if (window.innerWidth <= 500) { 
+          full.style.transform = `translateY(0%)`;
+        }
   
         clickCounter = 0;
       } else {
@@ -57,7 +60,9 @@ function OpenCloseButton() {
   
         line1.style.transform = `initial`;
         line2.style.transform = `initial`;
-        
+        if (window.innerWidth <= 500) { 
+          full.style.transform = `translateY(-100%)`;
+        }
   
         clickCounter = 1;
       }
@@ -143,9 +148,15 @@ function footerAnimation() {
 
 function init() {
   const mainScroll = locoScrollInit();
+  const home = document.querySelector('#home');
+
   const work = document.querySelector('#work');
   const about = document.querySelector('#about');
   const contact = document.querySelector('#contact');
+
+  home.addEventListener('click', function () {
+    clickToScroll(mainScroll, '#page1');
+  });
 
   work.addEventListener('click', function () {
     clickToScroll(mainScroll, '#recent-projects');
@@ -159,10 +170,18 @@ function init() {
     clickToScroll(mainScroll, 'footer');
   });
 
+  if (window.innerWidth <= 500) {
+    OpenCloseButton();
+  }
+  else {
+    
   OpenCloseButton();
   CursonAnimation();
   workAnimationCode();
   footerAnimation();
+  }
+
 }
 
 init();
+

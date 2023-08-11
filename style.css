@@ -37,6 +37,7 @@ body {
     width: 100%;
     font-family: gilroy;
     background-color: #fff;
+    overflow-x: hidden !important;
 
 }
 
@@ -131,14 +132,14 @@ nav .logo {
     gap: 2vw;
     flex-direction: column;
 
-    padding: 10vw 10vw 5vw 10vw;
+    padding: 7vw 10vw 5vw 10vw;
 
 }
 
 .full-nav .main-links {
     display: flex;
     flex-direction: column;
-    gap: 3vw;
+    gap: 2vw;
     font-size: 4vmax;
 }
 
@@ -163,6 +164,8 @@ nav .logo {
 
 #main {
     position: relative;
+    overflow-x: hidden !important;
+
 }
 
 #page1 {
@@ -181,7 +184,6 @@ nav .logo {
     font-size: 4.5vmax;
     font-family: valky;
     line-height: 10vmax;
-    mix-blend-mode: difference;
 
 }
 
@@ -293,7 +295,7 @@ nav .logo {
     height: 20vmax;
     background-position: center;
     background-size: cover;
-    
+
 
 }
 
@@ -633,4 +635,155 @@ footer {
     display: flex;
     align-items: center;
     gap: 2vw;
+}
+
+@media only screen and (max-width: 500px) {
+
+    nav {
+        padding: 6vmax 7vmax;
+    }
+
+    nav .logo {
+        font-size: 3vmax;
+    }
+
+    .full-nav {
+        width: 70vw;
+        right: initial;
+        right: 0;
+        transform: translateY(-100%);
+        padding: 45vw 10vw 10vw 10vw;
+    }
+
+    .full-nav .main-links {
+        font-size: 5vmax;
+    }
+
+    .full-nav .socials p {
+        font-size: 1.5vmax;
+    }
+
+    .full-nav .socials a {
+        font-size: 2vmax;
+    }
+
+    .main-text {
+        font-size: 5vmax;
+    }
+
+    .sub-text {
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2vmax;
+        width: max-content;
+    }
+
+    .img-1 {
+        top: 20%;
+        left: 10%;
+    }
+
+    .img-2 {
+        top: 40%;
+        left: 59%;
+    }
+
+    .img-3 {
+        top: 60%;
+        left: 20%;
+    }
+
+    #recent-projects{
+        align-items: initial;
+        justify-content: center;
+        height: 120vh;
+    }
+
+    .recent-project h2{
+        mix-blend-mode: initial;
+
+    }
+
+
+    .card{
+    mix-blend-mode: initial;
+    }
+
+    .card:nth-child(2){
+        top: 20vh;
+        left: initial;
+    }
+
+    .card:nth-child(3){
+        top: 50vh;
+        left: initial;
+    }
+
+    .card:nth-child(4){
+        top: 80vh;
+        left: initial;
+    }
+
+
+    #projects-slider{
+        height: 44vh;
+    }
+
+
+    #about-page{
+        height: 50vh;
+    }
+
+
+    .rounded-div{
+        display: none;
+    }
+
+    .footer-header{
+        top: 40%;
+        gap: 15vmax;
+    }
+
+    .footer-header .upper{
+        padding-bottom: 15vw;
+    }
+    .footer-header .upper .contact-ball{
+        left: 60%;
+        height: 15vmax;
+        width: 15vmax;
+        font-size: 2vmax;
+    }
+
+    .footer-header .lower{
+        flex-direction: column;
+        align-items: initial;
+    }
+    .footer-header .lower{
+        font-size: 2.5vmax;
+    }
+
+    .footer-header .lower a{
+        padding: 5vw ;
+    }
+
+    .footer-bottom{
+        bottom: 5%;
+        flex-direction: column-reverse;
+        gap: 5vw;
+        align-items: initial;
+    }
+
+    .footer-bottom p{
+        font-size: 2vmax;
+    }
+
+    .footer-bottom a{
+        font-size: 2.5vmax;
+    }
+
+
+
+
+
 }
