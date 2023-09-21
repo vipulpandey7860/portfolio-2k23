@@ -25,9 +25,9 @@
 
   <body>
     <nav data-scroll data-scroll-sticky data-scroll-target="#main">
-      <div class="logo"><p>Vipul</p></div>
+      <div class="logo magnet"><p>Vipul</p></div>
 
-      <div id="hamburger">
+      <div id="hamburger" class="magnet">
         <div id="hamburgerLine1"></div>
         <div id="hamburgerLine2"></div>
       </div>
@@ -35,18 +35,22 @@
 
     <div class="full-nav">
       <div class="main-links">
-        <button id="home">Home</button>
-        <button id="work">Work</button>
-        <button id="about">About</button>
-        <button id="contact">Contact</button>
+        <button class="magnet" id="home">Home</button>
+        <button class="magnet" id="work">Work</button>
+        <button class="magnet" id="about">About</button>
+        <button class="magnet" id="contact">Contact</button>
       </div>
 
       <div class="socials">
-        <p>Socials</p>
+        <p class="magnet">Socials</p>
         <div class="social">
-          <a href="https://www.linkedin.com/in/vipulpandey7860/">LinkedIn</a>
-          <a href="https://www.instagram.com/vipulpandey.me/">Instagram</a>
-          <a href="https://github.com/I-VipulPandey">GitHub</a>
+          <a class="magnet" href="https://www.linkedin.com/in/vipulpandey7860/"
+            >LinkedIn</a
+          >
+          <a class="magnet" href="https://www.instagram.com/vipulpandey.me/"
+            >Instagram</a
+          >
+          <a class="magnet" href="https://github.com/I-VipulPandey">GitHub</a>
         </div>
       </div>
     </div>
@@ -101,8 +105,42 @@
         </div>
 
         <div class="card">
-          <a href="https://imagist.onrender.com/">
+          <a href="https://tmdb-next-js.vercel.app/">
             <div id="photu1" class="photu"></div
+          ></a>
+          <div class="project-details">
+            <a class="project-name" href="https://tmdb-next-js.vercel.app/"
+              >ScreenGaze</a
+            >
+            <a
+              class="project-github"
+              href="https://github.com/I-VipulPandey/tmdb-next-js"
+              >Github</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="https://unsplash-clone-next.vercel.app/">
+            <div id="photu2" class="photu"></div
+          ></a>
+          <div class="project-details">
+            <a
+              class="project-name"
+              href="https://unsplash-clone-next.vercel.app/"
+              >UnSplash</a
+            >
+            <a
+              class="project-github"
+              href="https://github.com/I-VipulPandey/unsplash-clone-next"
+              >Github</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="https://imagist.onrender.com/">
+            <div id="photu3" class="photu"></div
           ></a>
           <div class="project-details">
             <a class="project-name" href="https://imagist.onrender.com/"
@@ -118,7 +156,7 @@
 
         <div class="card">
           <a href="https://undraw.onrender.com/">
-            <div id="photu2" class="photu"></div
+            <div id="photu4" class="photu"></div
           ></a>
           <div class="project-details">
             <a class="project-name" href="https://undraw.onrender.com/"
@@ -134,7 +172,7 @@
 
         <div class="card">
           <a href="https://i-vipulpandey.github.io/cozynest/">
-            <div id="photu3" class="photu"></div
+            <div id="photu5" class="photu"></div
           ></a>
           <div class="project-details">
             <a
@@ -160,6 +198,15 @@
               <img loading="lazy" src="./assets/images/apotheke.webp" alt="" />
               <div class="slider-card-text">
                 <p>Apotheke</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-card">
+            <div>
+              <img loading="lazy" src="./assets/images/screengaze.png" alt="" />
+              <div class="slider-card-text">
+                <p>ScreenGaze</p>
               </div>
             </div>
           </div>
@@ -241,6 +288,15 @@
               <img loading="lazy" src="./assets/images/apotheke.webp" alt="" />
               <div class="slider-card-text">
                 <p>Apotheke</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-card">
+            <div>
+              <img loading="lazy" src="./assets/images/screengaze.png" alt="" />
+              <div class="slider-card-text">
+                <p>ScreenGaze</p>
               </div>
             </div>
           </div>
@@ -334,6 +390,19 @@
 
           <div class="slider-card">
             <div>
+              <img
+                loading="lazy"
+                src="./assets/images/unsplash.png"
+                alt=""
+              />
+              <div class="slider-card-text">
+                <p>Unspash</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-card">
+            <div>
               <img loading="lazy" src="./assets/images/poppr.webp" alt="" />
               <div class="slider-card-text">
                 <p>Poppr</p>
@@ -408,6 +477,19 @@
               />
               <div class="slider-card-text">
                 <p>Imagist</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-card">
+            <div>
+              <img
+                loading="lazy"
+                src="./assets/images/unsplash.png"
+                alt=""
+              />
+              <div class="slider-card-text">
+                <p>Unspash</p>
               </div>
             </div>
           </div>
@@ -503,31 +585,37 @@
               together
             </h2>
 
-            <div class="contact-ball">
+            <div class="contact-ball magnet">
               <p>Get in touch</p>
             </div>
           </div>
           <div class="lower">
-            <a href="mailto:Vipulpandey7860@gmail.com"
+            <a class="magnet" href="mailto:Vipulpandey7860@gmail.com"
               >Vipulpandey7860@gmail.com</a
             >
-            <a href="tel:8770107442">+91 8770107442</a>
+            <a class="magnet" href="tel:8770107442">+91 8770107442</a>
           </div>
         </div>
         <div class="footer-bottom">
           <div class="version">
-            <p class="version">version</p>
-            <a href="">2023 ©️ Edition</a>
+            <p class="magnet" class="version">version</p>
+            <a class="magnet" href="">2023 ©️ Edition</a>
           </div>
 
           <div class="socials">
-            <p>Socials</p>
+            <p class="magnet">Socials</p>
             <div class="social">
-              <a href="https://www.linkedin.com/in/vipulpandey7860/"
+              <a
+                class="magnet"
+                href="https://www.linkedin.com/in/vipulpandey7860/"
                 >linkedIn</a
               >
-              <a href="https://www.instagram.com/vipulpandey.me/">Instagram</a>
-              <a href="https://github.com/I-VipulPandey">GitHub</a>
+              <a class="magnet" href="https://www.instagram.com/vipulpandey.me/"
+                >Instagram</a
+              >
+              <a class="magnet" href="https://github.com/I-VipulPandey"
+                >GitHub</a
+              >
             </div>
           </div>
         </div>
